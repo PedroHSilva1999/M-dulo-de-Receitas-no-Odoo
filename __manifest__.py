@@ -1,11 +1,11 @@
 {
-    'name': 'Movie Management',
+    'name': 'Receitas',
     'version': '1.0',
     'depends': ['base'],
     'author': 'Pedro Henrique',
-    'description': """Um módulo para gerenciar informações de filmes.""",
+    'description': """Um módulo para gerenciar receitas.""",
     'data': [
-        'views/movie_tree_view.xml',
+        'views/receitas.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True,

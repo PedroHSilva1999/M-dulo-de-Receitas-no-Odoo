@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+
+         <record id="receita_management_action" model="ir.actions.act_window">
+            <field name="name">Receitas</field>
+            <field name="res_model">meu_modulo_receita</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+         
+       <odoo>
+    <data>
+         <record id="view_receita_form" model="ir.ui.view">
+            <field name="name">Receita Form</field>
+            <field name="model">meu_modulo_receita</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nome"/>
+                        <field name="valor"/>
+                        <field name="ingredientes" widget="many2many_tags"/>
+                        <field name="quantidade_ingredientes" readonly="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_ingredientes_form" model="ir.ui.view">
+            <field name="name">Receita Form</field>
+            <field name="model">meu_modulo.ingrediente</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+    </data>
+</odoo>
